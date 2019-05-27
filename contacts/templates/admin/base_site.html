@@ -1,0 +1,21 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+<!-- IDEA: django uses this base.html file automatically so we dont
+            have to worry about it here. -->
+
+<!-- IDEA: Django provides us with many features like Branding and extrastyle
+            we'll be using these thing here  -->
+
+<!-- IDEA:  it sholud contain exactly h1 tag and id must be "head" -->
+{% block branding %}
+<h1 id = "head">
+Contacts Project  <!-- IDEA: name of project displayed in admin pannel -->
+</h1>
+{% endblock %}
+
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+
+{% endblock %}
